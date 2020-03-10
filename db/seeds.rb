@@ -12,5 +12,3 @@
   )
   article.save!
 end
-
-# test
