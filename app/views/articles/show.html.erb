@@ -1,0 +1,17 @@
+<div class="d-flex align-items-center">
+  <h1><%= @article.title %></h1>
+
+  <%= link_to edit_article_path(@article) do %>
+    <i class="fas fa-edit"></i>
+  <% end %>
+
+  <%= link_to article_path(@article),
+        method: :delete,
+        data: { confirm: "Are you sure?" } do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
+</div>
+
+<p><%= @article.content %></p>
+
+<img src="https://source.unsplash.com/random/800x600" alt="">
